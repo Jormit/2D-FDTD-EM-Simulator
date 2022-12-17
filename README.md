@@ -1,4 +1,4 @@
-# 2D FDTD EM Simulator
+# 2D FDTD EM Simulator ⚡
 
 A simple Finite-Difference-Time-Domain (FDTD) EM simulator implemented in python.
 
