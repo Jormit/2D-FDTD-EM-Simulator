@@ -22,7 +22,7 @@ mu = np.ones((points_x, points_y)) # Permeability
 ep = np.ones((points_x, points_y)) # Permittivity
 co = np.zeros((points_x, points_y)) # Conductivity
 
-# Run Simulation
+# Pass to C code for main processing loop
 fdtd(dt, dx, dy, steps, points_x, points_y, hx, hy, ez, mu, ep, co)
 
 # Plot Results

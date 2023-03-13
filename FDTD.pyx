@@ -1,17 +1,13 @@
 import numpy as np
-
 cimport numpy as np
 
 np.import_array()
-
 DTYPE = np.double
-
 ctypedef np.double_t DTYPE_t
 
 def fdtd(double dt, double dx, double dy, int steps, int points_x, int points_y,
          np.ndarray [DTYPE_t, ndim=3] hx, np.ndarray [DTYPE_t, ndim=3] hy, np.ndarray [DTYPE_t, ndim=3] ez,
          np.ndarray [DTYPE_t, ndim=2] mu, np.ndarray [DTYPE_t, ndim=2] ep, np.ndarray [DTYPE_t, ndim=2] co):
-
     cdef int t, x, y
     for t in range(1, steps):
         for x in range(0, points_x):
