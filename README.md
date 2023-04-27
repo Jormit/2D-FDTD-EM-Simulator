@@ -1,4 +1,4 @@
-# 2D FDTD EM Simulator ⚡
+# 2D FDTD EM Simulator
 
 A simple Finite-Difference-Time-Domain (FDTD) EM simulator implemented in python. Cython is used to implement the main loop in C code, thus it must first be compiled using ```compile.py build_ext --inplace```.
 
